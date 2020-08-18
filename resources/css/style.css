@@ -1,0 +1,20 @@
+article>section>ul>li {
+    margin: 30px;
+}
+
+article>section>ul>li>span {
+    font-weight: bold;
+}
+
+article>section>ul>li>a {
+    color: var(--ui-green);
+}
+
+article>section>ul>li>a:hover,
+article>section>ul>li>a:link {
+    color: var(--ui-green-hover);
+}
+
+article>section>ul>li>a:active {
+    color: var(--ui-green-active);
+}
