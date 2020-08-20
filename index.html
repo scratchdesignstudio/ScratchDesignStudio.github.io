@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="https://scratchdesignstudio.github.io/resources/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/global.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
-    <link rel="shortcut icon" type="image/png" href="https://scratchdesignstudio.github.io/resources/img/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="/resources/img/favicon.ico">
 
     <script src="/resources/js/i18n.js"></script>
     <title>SDS Home</title>
@@ -16,45 +16,52 @@
 <body>
     <header>
         <ul>
-            <li id="name">
-                <a href="http://scratchdesignstudio.github.io/">sds</a>
-            </li>
+            <li><a href="/">sds</a></li>
             <li>
                 <i class="material-icons md-18 dropdownIcon">language</i>
                 <select id="dropdown"></select>
                 <noscript>Enable JavaScript to load the different languages</noscript>
             </li>
-            <li>
-                <a href="http://scratchdesignstudio.github.io/info/">info</a>
-            </li>
-            <li>
-                <a href="http://scratchdesignstudio.github.io/translate-formatter/">translate-formatter</a>
-            </li>
+            <li><a href="/info/">info</a></li>
+            <li><a href="/translate-formatter/">translate-formatter</a></li>
         </ul>
     </header>
     <article>
         <section>
+            <span class="translated-by-before">Translated by</span>
+            <span class="translators">technoboy10</span>
+            <span class="translated-by-after"></span>
+        </section>
+        <section>
             <ul>
                 <li>
                     <span>home</span>
-                    <a href="https://github.com/scratchdesignstudio/scratchdesignstudio.github.io">GitHub</a>
-                    <a href="http://scratchdesignstudio.github.io/">Website</a>
-                    <p id="home-description">The home page of the SDS organisation.</p>
+                    <a href="https://github.com/scratchdesignstudio/scratchdesignstudio.github.io" class="github">GitHub</a>
+                    <a href="/" class="website">Website</a>
+                    <p class="home-description">The home page of the SDS organisation.</p>
                 </li>
                 <li>
                     <span>info</span>
-                    <a href="https://github.com/scratchdesignstudio/info">GitHub</a>
-                    <a href="http://scratchdesignstudio.github.io/info/">Website</a>
-                    <p id="info-description">A page with infos about the current SDS and how to submit a project.</p>
+                    <a href="https://github.com/scratchdesignstudio/info" class="github">GitHub</a>
+                    <a href="/info/" class="website">Website</a>
+                    <p class="info-description">A page with infos about the current SDS and how to submit a project.</p>
+                </li>
+                <li>
+                    <span>quick-link</span>
+                    <a href="https://github.com/scratchdesignstudio/quick-link" class="github">GitHub</a>
+                    <a href="/quick-link/" class="website">Website</a>
+                    <p class="quick-link-description">A page to get the latest project to add to the SDS.</p>
                 </li>
                 <li>
                     <span>translate-formatter</span>
-                    <a href="https://github.com/scratchdesignstudio/translate-formatter">GitHub</a>
-                    <a href="http://scratchdesignstudio.github.io/translate-formatter/">Website</a>
-                    <p id="translate-formatter-description">A page to tranlsate the description of the current SDS.</p>
+                    <a href="https://github.com/scratchdesignstudio/translate-formatter" class="github">GitHub</a>
+                    <a href="/translate-formatter/" class="website">Website</a>
+                    <p class="translate-formatter-description">A page to tranlsate the description of the current SDS.
+                    </p>
                 </li>
             </ul>
         </section>
+        <hr>
     </article>
 </body>
 

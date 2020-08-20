@@ -1,0 +1,11 @@
+{
+    "translators": [
+        "LiFayTheGoblin"
+    ],
+    "github": "GitHub",
+    "website": "Website",
+    "home-description": "The home page of the SDS organisation.",
+    "info-description": "A page with infos about the current SDS and how to submit a project.",
+    "quick-link-description": "A page to get the latest project to add to the SDS.",
+    "translate-formatter-description": "A page to tranlsate the description of the current SDS."
+}

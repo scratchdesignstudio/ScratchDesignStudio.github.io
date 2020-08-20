@@ -4,7 +4,43 @@
         "name": "English"
     },
     {
+        "code": "id",
+        "name": "Bahasa Indonesia"
+    },
+    {
+        "code": "de",
+        "name": "Deutsch"
+    },
+    {
+        "code": "es",
+        "name": "Español"
+    },
+    {
         "code": "fr",
         "name": "Français"
+    },
+    {
+        "code": "it",
+        "name": "Italiano"
+    },
+    {
+        "code": "nl",
+        "name": "Nederlands"
+    },
+    {
+        "code": "ro",
+        "name": "Română"
+    },
+    {
+        "code": "ru",
+        "name": "Русский"
+    },
+    {
+        "code": "tr",
+        "name": "Türkçe"
+    },
+    {
+        "code": "he",
+        "name": "עִבְרִית"
     }
 ]

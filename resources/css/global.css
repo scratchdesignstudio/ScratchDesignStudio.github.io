@@ -64,16 +64,10 @@ header {
 
 header>ul {
     display: flex;
+    overflow-x: auto;
     margin: 0 auto;
     padding: 0;
-    list-style: none;
-
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
-    cursor: pointer;
+    text-align: start;
 }
 
 header>ul>li {
@@ -83,28 +77,29 @@ header>ul>li {
     position: relative;
     vertical-align: middle;
     margin-right: 20px;
+    cursor: pointer;
 }
 
-header>ul>li:hover {
+header li:hover {
     background-color: var(--ui-green-hover);
 }
 
-header>ul>li>a {
+header a {
     color: var(--ui-white);
     text-decoration: none;
     letter-spacing: 1.1px;
 }
 
-header>ul>li:not(#name)>a {
+header li:not(:first-child) a {
     font-size: 14pt;
 }
 
-header>ul>li>i.material-icons.md-18 {
+header li i.material-icons.md-18 {
     font-size: 18px;
 }
 
 
-header>ul>li>select#dropdown {
+header #dropdown {
     background-color: transparent;
     color: var(--ui-white);
     height: 30px;
@@ -116,12 +111,12 @@ header>ul>li>select#dropdown {
 }
 
 
-header>ul>li>select#dropdown:focus,
-header>ul>li>select#dropdown:active {
+header #dropdown:focus,
+header #dropdown:active {
     border: none;
 }
 
-header>ul>li>select#dropdown>option {
+header #dropdown option {
     color: var(--ui-dark-gray);
     background-color: var(--ui-light-gray);
     padding: 12px 16px;
@@ -139,9 +134,35 @@ article {
     padding: 20px 0;
     min-width: 75%;
     width: 75%;
-    min-height: 768px;
 }
 
-article>section {
-    margin: 1em;
+article section,
+article hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+article section span+span,
+article section span+span{
+    margin-left: 1ch;
+}
+
+article>section>a {
+    display: inline;
+    color: var(--ui-green);
+}
+
+article>section>a:link,
+article>section>a:visited {
+    color: var(--ui-green);
+    text-decoration: none;
+}
+
+article>section>a:hover {
+    color: var(--ui-green-hover);
+    text-decoration: none;
+}
+
+article>section>a:active {
+    color: var(--ui-green-active);
+    text-decoration: underline;
 }
